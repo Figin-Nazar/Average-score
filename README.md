@@ -5,7 +5,7 @@
 
     from statistics import mean
 
-#                       ВВЕДЕННЯ 
+#                       Введення
 
 
 
