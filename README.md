@@ -28,7 +28,7 @@
     else:
         error_labels[index].config(text="")    # Якщо все норм — чистимо помилку
 
-#                      ПЕРЕХІД між полями стрілками 
+#                      Перехід між полями стрілками 
 
     def focus_next(event, index):
         if index < len(entries) - 1:
@@ -38,7 +38,7 @@
         if index > 0:
             entries[index - 1].focus()    # Стрілка вгору → попереднє поле
 
-#                       ОБЧИСЛЕННЯ СЕРЕДНЬОГО 
+#                       Обчислення середнього
     def calculate():
         try:
             nums = [int(e.get()) for e in entries]   # Збираємо усі значення як числа
@@ -57,7 +57,7 @@
     except ValueError:
         result_label.config(text="Заповніть всі поля!", fg="red")
 
-#                               ГОЛОВНЕ ВІКНО 
+#                               Головне вікно
     window = tk.Tk()
     window.title("Середнє арифметичне")
     window.geometry("400x400")
@@ -75,7 +75,7 @@
     frame.pack()
  
 
-#                            СТВОРЕННЯ 5 ПОЛІВ ВВОДУ 
+#                            Поля для вводу
 
     for i in range(5):
         row = tk.Frame(frame)     # Стрічка (поле + текст помилки)
